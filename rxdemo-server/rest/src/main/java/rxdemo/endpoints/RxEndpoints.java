@@ -11,7 +11,7 @@ import spark.Response;
 import static spark.Spark.*;
 
 // change to be deployed
-// triggering a build - again trigger build on paralel running
+// triggering a build and deploy
 
 public class RxEndpoints {
    public static void initalizeEndpoints() {
