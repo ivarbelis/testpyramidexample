@@ -31,7 +31,7 @@ jobs:
     #   run: mvn -B package --file pom.xml
     - name: Install MVN
       working-directory: ./rxdemo-server
-      run: mvn clean install --file *.pom
+      run: mvn clean install
     - name: Run MVN
       working-directory: ./rxdemo-server
       run: mvn exec:java
