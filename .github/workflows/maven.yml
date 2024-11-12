@@ -30,8 +30,10 @@ jobs:
     # - name: Build with Maven
     #   run: mvn -B package --file pom.xml
     - name: Install MVN
-      run: mvn clean install
+      working-directory: ./rxdemo-server
+      run: mvn clean install --file *.pom
     - name: Run MVN
+      working-directory: ./rxdemo-server
       run: mvn exec:java
     
      
